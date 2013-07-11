@@ -1,0 +1,23 @@
+timestamp: 2013-07-11T11:22:04.141607
+CREATE TABLE agenda(
+    id INT AUTO_INCREMENT NOT NULL,
+    empresa VARCHAR(255) NOT NULL,
+    telefone VARCHAR(255) NOT NULL UNIQUE,
+    contato VARCHAR(255),
+    dep VARCHAR(255),
+    particular CHAR(1),
+    ramal VARCHAR(255),
+    PRIMARY KEY(id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2013-07-11T11:22:04.253552
+CREATE TABLE agenda_lg(
+    id INT AUTO_INCREMENT NOT NULL,
+    ramal VARCHAR(255),
+    telefone VARCHAR(255),
+    empresa VARCHAR(255),
+    datetime VARCHAR(255),
+    particular VARCHAR(255),
+    PRIMARY KEY(id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!

@@ -1,0 +1,17 @@
+routers = dict(
+
+    # base router
+    BASE=dict(
+        default_application='agenda',
+        applications=['agenda', 'admin',]
+    ),
+
+   agenda=dict(
+        default_controller='initial',
+        default_function='principal',
+        controllers=['initial', 'manager'],
+        functions=['login', 'edit', 'principal', 'redireciona', 'addition', 'addition2',
+                        'agenda', 'agenda_particular', 'log_out', 'log_in', 'ligacao', 'permissao']
+    )
+
+)

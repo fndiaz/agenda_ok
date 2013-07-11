@@ -1,0 +1,6 @@
+
+
+Blog = db.define_table("blog",
+      Field("title", notnull=True, unique=True),
+      Field("description", "text"),
+	)
